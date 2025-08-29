@@ -3,13 +3,10 @@ Building a modern data warehouse with MySQL including ETL, data modelling and an
 This project demonstrates how a data warehouse is created from the start to the end using SQL Server and how the analytical insights can be taken out from the datasets.
 The project requirements and the objective of this project are listed below.
 
-Sure thing, Jeeva! Here's the content rewritten in the same structured format as the image, but simplified for beginners:
 
----
 
 ## **Project Requirements**
 
----
 
 ### **1. Building the Data Warehouse (Data Engineering)**
 
@@ -31,7 +28,7 @@ Sure thing, Jeeva! Here's the content rewritten in the same structured format as
   - **Scope**:  
     Only use the latest data. No need to include old or past records.
 
-  - **Documentation**:  
+    **Documentation**:  
     Write clear notes explaining how the data is organized, so business users and analysts can understand it easily.
 
 
