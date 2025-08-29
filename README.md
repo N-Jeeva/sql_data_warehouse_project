@@ -28,7 +28,7 @@ The project requirements and the objective of this project are listed below.
   - **Scope**:  
     Only use the latest data. No need to include old or past records.
 
-    **Documentation**:  
+  - **Documentation**:  
     Write clear notes explaining how the data is organized, so business users and analysts can understand it easily.
 
 
