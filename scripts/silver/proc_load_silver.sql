@@ -7,12 +7,13 @@ Script Purpose:
 Actions Performed:
 	- Truncates Silver Tables
 	- Inserts transformed and cleansed data from bronze to siver tables
+
+Parameters: None
+	This stored procedure does not accept any parameters and does not return any values.
+
+Usage example:
+	execute silver.load_silver;
 */
-
-
-
-
-
 
 
 delimiter $$
