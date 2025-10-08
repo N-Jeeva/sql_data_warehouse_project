@@ -1,4 +1,13 @@
-
+/*
+------------------------------------------------------------
+LOAD SILVER LAYER (BRONZE >> TO >> SILVER)
+------------------------------------------------------------
+Script Purpose:
+    This stored procedure will perform ETL (Extract, Transform and Load) process to load the silver schema tables using bronze schema.
+Actions Performed:
+	- Truncates Silver Tables
+	- Inserts transformed and cleansed data from bronze to siver tables
+*/
 
 
 
