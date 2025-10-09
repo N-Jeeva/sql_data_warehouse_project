@@ -40,16 +40,53 @@ Usage Notes:
         SELECT DISTINCT(cst_marital_status) from silver.crm_cust_info;
 
 -- =============================================================================
+-- Checking 'silver.crm_prd_info'
+-- =============================================================================
+
+-- Check for NULLs or Duplicates in Primary Key
+-- Expectation: No Results
+        SELECT COUNT(*) FROM silver.crm_prd_info
+        GROUP BY prd_id
+        HAVING COUNT(*) > 1 OR prd_id IS NULL;
+
+-- Invalid date ranges and orders.
+        SELECT * FROM silver.crm_prd_info
+        WHERE prd_start_dt > prd_end_dt;
+
+-- Data Standardization & Consistency
+        SELECT DISTINCT prd_line
+        FROM silver.crm_prd_info;
+
+        select * from silver.crm_prd_info 
+        where prd_cost < 0 or prd_cost is null;
+
+-- Check for Unwanted Spaces
+-- Expectation: No Results
+        SELECT * FROM silver.crm_cust_info
+        WHERE prd_nm <> trim(prd_nm);
+
+-- =============================================================================
+-- Checking 'silver.crm_cust_info'
+-- =============================================================================
+-- Invalid date ranges and orders.
+        SELECT * FROM silver.crm_sales_details
+        where sls_order_dt > sls_ship_dt or sls_order_dt > sls_due_dt;
+
+-- Data Standardization & Consistency
+        SELECT * from silver.crm_sales_details 
+        where sls_sales != sls_price * sls_quantity;
+
+-- =============================================================================
 -- Checking 'silver.silver.erp_cust_az12'
 -- =============================================================================
 -- Data Standardization & Consistency
-
         SELECT DISTINCT gen
         FROM silver.erp_cust_az12;
 
 -- Invalid date ranges and orders
         SELECT * FROM silver.erp_cust_az12
         WHERE bdate > CURRENT_DATE() OR bdate < '1925-01-01';
+
 -- =============================================================================
 -- Checking 'silver.erp_loc_a101'
 -- =============================================================================
