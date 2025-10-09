@@ -30,6 +30,14 @@ Usage Notes:
         GROUP BY cst_id
         HAVING COUNT(*) > 1 OR cst_id IS NULL;
 
+-- Check for Unwanted Spaces
+-- Expectation: No Results
+        SELECT * FROM silver.crm_cust_info
+        WHERE cst_firstname <> trim(cst_firstname) or cst_lastname <> trim(cst_lastname);
+
+-- Data Standardization & Consistency
+        SELECT DISTINCT(cst_gndr) from silver.crm_cust_info;
+        SELECT DISTINCT(cst_marital_status) from silver.crm_cust_info;
 
 -- =============================================================================
 -- Checking 'silver.silver.erp_cust_az12'
