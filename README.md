@@ -46,9 +46,8 @@ The project requirements and the objective of this project are listed below.
 These insights will help teams understand key business metrics and make better decisions.
 
 ## Data Architecture
-        This project follows medallion data architecture model.
-<img width="1450" height="721" alt="data architecture 1" src="https://github.com/user-attachments/assets/1620e96f-f5e5-4ce3-b9d5-8365001d3437" />
-
+        This project follows medallion data architecture model which consists of Bronze, Silver and Gold Layers.
+<img width="1501" height="730" alt="data architecture 2" src="https://github.com/user-attachments/assets/18cef6e1-8a16-4e66-8fd6-40ebd84fd479" />
 
 **Bronze Layer**  : Keeps the raw data exactly as it comes from the source systems. The data is loaded from CSV files into the SQL Server database.
 **Silver Layer**  : Cleans, standardizes, and organizes the data to make it ready for analysis.
