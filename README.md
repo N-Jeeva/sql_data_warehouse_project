@@ -47,7 +47,8 @@ These insights will help teams understand key business metrics and make better d
 
 ## Data Architecture
         This project follows medallion data architecture model.
-<img width="1272" height="666" alt="data architecture" src="https://github.com/user-attachments/assets/f038d391-fbc7-4c38-8610-c74a8fbdc98f" />
+<img width="1450" height="721" alt="data architecture 1" src="https://github.com/user-attachments/assets/1620e96f-f5e5-4ce3-b9d5-8365001d3437" />
+
 
 **Bronze Layer**  : Keeps the raw data exactly as it comes from the source systems. The data is loaded from CSV files into the SQL Server database.
 **Silver Layer**  : Cleans, standardizes, and organizes the data to make it ready for analysis.
