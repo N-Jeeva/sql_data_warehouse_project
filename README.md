@@ -5,10 +5,10 @@ The project requirements and the objective of this project are listed below.
 
 
 
-## **Project Requirements**
+## Project Requirements
 
 
-### **1. Building the Data Warehouse (Data Engineering)**
+### 1. Building the Data Warehouse (Data Engineering)
 
 - **Goal**:  
         Build a modern data warehouse using **SQL Server** to combine sales data, create useful reports, and help make smart business decisions.
